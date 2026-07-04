@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー・免責事項 - おえかきバトル</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f7f5fb;
+            padding: 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 32px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+        }
+        h1 {
+            font-size: 1.6em;
+            color: #2c2c2c;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .app-name {
+            text-align: center;
+            color: #7c5cd6;
+            font-size: 1.1em;
+            margin-bottom: 32px;
+        }
+        .updated {
+            text-align: center;
+            color: #888;
+            font-size: 0.85em;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.15em;
+            color: #2c2c2c;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #ece5f9;
+        }
+        p, li {
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-left: 1.5em;
+            margin-bottom: 12px;
+        }
+        li { margin-bottom: 4px; }
+        .contact {
+            margin-top: 32px;
+            padding: 16px;
+            background: #f7f3fd;
+            border-radius: 8px;
+        }
+        a { color: #7c5cd6; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プライバシーポリシー</h1>
+        <div class="app-name">おえかきバトル</div>
+        <div class="updated">最終更新日：2026年7月5日</div>
+
+        <p>おえかきバトル（以下「本アプリ」）は、お題を制限時間内に描き、他のプレイヤーがその絵を当てて遊ぶお絵かきゲームです。本プライバシーポリシーでは、本アプリにおける情報の取り扱いについて説明いたします。</p>
+
+        <h2>1. 収集する情報</h2>
+        <p>本アプリでは、以下の情報を利用します。</p>
+
+        <ul>
+            <li><strong>匿名の識別情報</strong><br>
+            本アプリはアカウント登録・ログインを必要とせず、端末ごとに匿名の識別ID（Firebase Anonymous Authentication）を自動的に発行します。氏名・メールアドレス・電話番号などの個人情報の入力は求めません。</li>
+
+            <li><strong>ニックネーム</strong><br>
+            ランキング等に表示するニックネームをご自身で設定いただけます。既定値は「ゲスト」です。実名や個人が特定できる情報を入力しないようご注意ください。</li>
+
+            <li><strong>お絵かきデータ</strong><br>
+            プレイヤーが描いた絵（線の座標・色などのデータ）を、出題として他のプレイヤーに公開するために保存します。また、描いた絵をAIが自動採点・審査するために画像として外部サーバー（Google Gemini API）へ送信します。</li>
+
+            <li><strong>回答・スコア・利用状況の情報</strong><br>
+            解読の回答内容、獲得スコア、称号、いいね・お気に入り・通報の履歴などを、ゲーム機能提供のために保存します。</li>
+
+            <li><strong>広告に関する情報</strong><br>
+            本アプリはGoogle AdMobを利用して広告を表示します。AdMobは広告配信の最適化のために、端末の広告識別子（IDFA）やアプリの使用状況などの情報を収集する場合があります。トラッキングの許可はiOSの設定からいつでも変更できます。</li>
+        </ul>
+
+        <h2>2. 情報の利用目的</h2>
+        <p>取得した情報は、以下の目的でのみ使用します。</p>
+        <ul>
+            <li>お絵かき当てゲームの出題・回答・採点というコア機能を提供するため</li>
+            <li>AIによる回答の採点、および絵の内容審査（反則行為・不適切なコンテンツの検出）のため</li>
+            <li>ランキング・称号・スコアなどのゲーム内実績を表示するため</li>
+            <li>他のプレイヤーからの通報を受け付け、不適切な投稿を出題対象から除外するため</li>
+            <li>広告の表示および最適化のため</li>
+        </ul>
+
+        <h2>3. 外部サービスとの連携</h2>
+        <p>本アプリは以下の外部サービスを利用しています。</p>
+        <ul>
+            <li><strong>Google Firebase</strong>（Firestore データベース・匿名認証・Cloud Functions）<br>
+            お絵かきデータ、スコア、ランキング情報などの保存・同期に利用します。<br>
+            <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a></li>
+
+            <li><strong>Google Gemini API</strong>（Cloud Functions経由での回答採点・絵の審査）<br>
+            プレイヤーが描いた絵の画像および回答テキストがGoogleのサーバーに送信され、採点・審査のために処理されます。APIキーはサーバー側でのみ管理し、アプリ内には保持していません。<br>
+            <a href="https://policies.google.com/privacy" target="_blank">Google プライバシーポリシー</a></li>
+
+            <li><strong>Google AdMob</strong>（広告配信）<br>
+            広告配信の最適化のために端末情報等が収集される場合があります。<br>
+            <a href="https://policies.google.com/technologies/ads" target="_blank">Google 広告に関するポリシー</a></li>
+        </ul>
+
+        <h2>4. ユーザー投稿コンテンツについて</h2>
+        <p>本アプリでは、プレイヤーが描いた絵が他のプレイヤーに表示される仕組みになっています。投稿された絵はAIによる自動審査を経て、反則行為（文字の書き込みなど）や不適切な内容が検出された場合、出題対象から除外されます。また、プレイヤーは不適切と思われる投稿を通報することができ、通報が一定数集まった投稿は自動的に出題対象から除外されます。</p>
+        <p>ただし、AIによる審査は完全ではなく、すべての不適切なコンテンツを検出できるとは限りません。不適切な投稿を発見した場合は、アプリ内の通報機能、または下記のお問い合わせ先までご連絡ください。</p>
+
+        <h2>5. データの保存</h2>
+        <p>スコア・称号・作品集・お気に入りなどのプレイ記録は、お使いの端末内（ローカル）に保存されます。加えて、他のプレイヤーとの出題・回答・ランキング機能のため、絵のデータ・回答結果・ニックネーム・スコアなどをGoogle Firebase（Firestore）上に保存します。</p>
+        <p>アプリ内の「データ引き継ぎ」機能を使うことで、端末内のプレイ記録をバックアップファイルとして書き出し、機種変更時などに手動で復元することができます。</p>
+        <p>端末内のデータは、アプリを削除すると消去されます。Firebase上に保存されたデータの削除をご希望の場合は、下記のお問い合わせ先までご連絡ください。</p>
+
+        <h2>6. 対象年齢について</h2>
+        <p>本アプリは個人情報の入力（実名・メールアドレス・電話番号・生年月日など）を必要としない、全年齢向けのお絵かきゲームです。ニックネームは自由入力のため、実名など個人を特定できる情報を入力しないようご注意ください。小さなお子さまがご利用になる場合は、保護者の方の指導のもとでのご利用をおすすめします。</p>
+
+        <h2>7. セキュリティ</h2>
+        <p>外部サービスとの通信はすべてHTTPSによる暗号化通信で行われます。また、データベースへのアクセスにはセキュリティルールを設定し、ゲームの集計データ（回答数・いいね数など）はサーバー側の処理（Cloud Functions）を経由してのみ更新される仕組みにしています。</p>
+
+        <h2>8. ユーザーの権利</h2>
+        <p>以下の操作はユーザーご自身で行うことができます。</p>
+        <ul>
+            <li>アプリ内でのニックネームの変更</li>
+            <li>アプリ内データのバックアップ書き出し・復元（データ引き継ぎ機能）</li>
+            <li>不適切な投稿の通報</li>
+            <li>アプリの削除による端末内データの消去</li>
+            <li>iOSの設定からトラッキングの許可を変更</li>
+        </ul>
+
+        <h2>9. プライバシーポリシーの変更</h2>
+        <p>本ポリシーは、法令の改正やアプリの機能変更に伴い、事前の通知なく変更される場合があります。変更後のポリシーは本ページに掲載した時点で効力を生じるものとします。</p>
+
+        <h1 style="margin-top: 48px;">免責事項</h1>
+        <div class="updated">最終更新日：2026年7月5日</div>
+
+        <h2>1. AIによる採点・審査について</h2>
+        <p>本アプリが提供する回答の採点結果や絵の審査結果は、AIによる自動判定であり、その正確性・公平性を完全に保証するものではありません。判定結果はゲームの一部としてご参加ください。</p>
+
+        <h2>2. ユーザー投稿コンテンツについて</h2>
+        <p>他のプレイヤーが投稿した絵の内容について、開発者はその正確性・適法性・適切性を保証するものではありません。不適切な投稿を発見した場合は、通報機能またはお問い合わせ先までご連絡ください。</p>
+
+        <h2>3. 損害の免責</h2>
+        <p>本アプリの利用により生じた直接的・間接的な損害について、開発者は一切の責任を負いません。本アプリの利用はユーザーご自身の責任において行ってください。</p>
+
+        <h2>4. サービスの変更・終了</h2>
+        <p>開発者は、事前の通知なく本アプリの機能変更、サービスの一時停止または終了を行う場合があります。サービス終了時、Firebase上に保存されたデータが失われる可能性があります。</p>
+
+        <h2>5. 免責事項の変更</h2>
+        <p>本免責事項は、必要に応じて事前の通知なく変更される場合があります。変更後の免責事項は本ページに掲載した時点で効力を生じるものとします。</p>
+
+        <div class="contact">
+            <h2 style="margin-top: 0; border: none;">お問い合わせ</h2>
+            <p>本ポリシーに関するお問い合わせ、不適切な投稿の報告、データ削除のご依頼は、下記メールアドレスまでご連絡ください。</p>
+            <p>メール：<a href="mailto:scottie.develop@gmail.com">scottie.develop@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
